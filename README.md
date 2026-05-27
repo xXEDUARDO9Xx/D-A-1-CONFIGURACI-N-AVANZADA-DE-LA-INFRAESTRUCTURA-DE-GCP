@@ -1,6 +1,6 @@
 # Reto Dia 1: Configuracion avanzada de la infraestructura de GCP 
 
-### Creación y Configuración del Proyecto:
+### 1 Creación y Configuración del Proyecto:
 *** Proyecto Creado: My First Project
 *** Habilitacion de las APIs:
   * Cloud Storage (`storage.googleapis.com`)
@@ -11,5 +11,24 @@
 <img width="930" height="638" alt="image" src="https://github.com/user-attachments/assets/e8ab5419-a964-45a3-8ad8-0bf20a243a3a" />
 
 *** Configuracion de roles y permisos a un usuario de prueba 
-#Solamente se le dio el rol de creador de objetos de storage porque dados los privilegios minimos para trabajar serian solamente ese, podria ser tambien el de lectura pero podria estar viendo objetos-archivos los cuales no deberia tener acceso.
+Creamos antes una cuenta de servicio, para poder darle los roles despues en el IAM.
+<img width="921" height="331" alt="image" src="https://github.com/user-attachments/assets/b4a634da-6a3a-46ea-a0b4-814ec1956fff" />
+
+Solamente se le dio el rol de creador de objetos de storage porque dados los privilegios minimos para trabajar serian solamente ese de poder crear, podria ser tambien el de lectura pero podria estar viendo objetos-archivos los cuales no deberia tener acceso, asi avitamos roles administrativos globales y mitigamos riesgos de seguridad.
+
 <img width="1731" height="711" alt="image" src="https://github.com/user-attachments/assets/5861328d-20a4-4e31-b7cf-09389d600d7e" />
+
+### 2 Almacenamiento 
+
+*** Bucket principal:  bucket-retos-gcp
+*** Control de Acceso: Configuración a nivel de bucket para aplicar de forma homogénea las políticas de IAM.
+*** Reglas de Ciclo de Vida (Lifecycle): Se implementó una regla de retención automática para optimizar costos:
+*** Condición: Archivos con antigüedad mayor a 30 días.
+*** Acción: Eliminación automática (o transición a almacenamiento en frío *Nearline*, según se requiera).
+
+<img width="774" height="797" alt="Captura de pantalla 2026-05-27 134437" src="https://github.com/user-attachments/assets/5d3d5d56-c1d9-4d7d-871c-29db80460cfa" />
+Nuevamente se volvieron a dar permisos al usuario de prueba, para que pudiera crear archivos y tambien que los pudiera visualizar.
+
+<img width="1793" height="914" alt="image" src="https://github.com/user-attachments/assets/c1210230-f147-4f1d-bb64-e9260d930831" />
+
+
