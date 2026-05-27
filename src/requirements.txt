@@ -1,2 +1,3 @@
+##Requerimientos para que pueda funcionar 
 functions-framework==3.*
 google-cloud-logging==3.*
