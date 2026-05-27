@@ -69,5 +69,8 @@ Ejecución del test_main.py
 
 <img width="935" height="100" alt="image" src="https://github.com/user-attachments/assets/1959db70-62f7-471c-81fb-811b978c714c" />
 
+## Diagrama de flujo
+
+<img width="626" height="545" alt="image" src="https://github.com/user-attachments/assets/bac670ff-fb42-4a30-9216-7ce1fb995b8b" />
 
 
