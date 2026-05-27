@@ -65,5 +65,9 @@ En el cloud functions se activo la función mostranto los datos:
 
 <img width="1916" height="899" alt="image" src="https://github.com/user-attachments/assets/18abd1b7-56c1-4f44-8aaf-0108b84b0da2" />
 
+Ejecución del test_main.py
+
+<img width="935" height="100" alt="image" src="https://github.com/user-attachments/assets/1959db70-62f7-471c-81fb-811b978c714c" />
+
 
 
