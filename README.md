@@ -54,5 +54,16 @@ Nuevamente se volvieron a dar permisos al usuario de prueba, para que pudiera cr
 
 ---
 
+## Ejecución
+
+Subi un archivo al bucket: 
+
+<img width="1918" height="902" alt="image" src="https://github.com/user-attachments/assets/c6f2406d-5ab8-4ff8-b16b-a311780577fc" />
+
+
+En el cloud functions se activo la función mostranto los datos: 
+
+<img width="1916" height="899" alt="image" src="https://github.com/user-attachments/assets/18abd1b7-56c1-4f44-8aaf-0108b84b0da2" />
+
 
 
